@@ -8,4 +8,8 @@ defmodule DevNull.Router do
   put "/:status" do
     send_resp(conn, String.to_integer(status), "")
   end
+
+  get "/:status" do
+    send_resp(conn, String.to_integer(status), "")
+  end
 end
